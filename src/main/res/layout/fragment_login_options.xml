@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Global.LoginOptions.LoginOptionsFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgfinal">
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:layout_centerHorizontal="true"
+                android:textSize="50dp"/>
+
+            <Button
+                android:id="@+id/loginBtn"
+
+                android:text="connexion"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:background="@drawable/buttonshape"
+                android:layout_marginTop="500dp"
+            />
+
+            <Button
+                android:id="@+id/subscribeBtn"
+                android:layout_below="@+id/loginBtn"
+                android:layout_marginTop="50dp"
+                android:text="s'inscrire"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:background="@drawable/buttonshape"
+                android:layout_centerInParent="true"
+
+
+                />
+
+        </RelativeLayout>
+
+</FrameLayout>

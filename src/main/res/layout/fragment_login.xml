@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgfinal"
+    tools:context=".Global.Login.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="veuillez saisir vos information"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFF"
+            android:textSize="25dp"
+            android:layout_marginTop="350dp"/>
+
+        <EditText
+            android:id="@+id/userNameEt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/welcom"
+            android:layout_marginTop="50dp"
+            android:hint="      Email : example@Domain.com"
+            android:textColorHint="#E7E9A1"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="textEmailAddress"
+            android:textColor="#f9ca12"/>
+
+        <EditText
+            android:id="@+id/passwordEt"
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/userNameEt"
+            android:layout_marginTop="50dp"
+            android:hint="          saisir votre mot de passe    "
+            android:textColorHint="#E7E9A1"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:inputType="textPassword"
+            android:textColor="#f9ca12"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:background="@drawable/buttonshape"
+           android:layout_below="@+id/passwordEt"
+            android:layout_marginTop="50dp"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>
