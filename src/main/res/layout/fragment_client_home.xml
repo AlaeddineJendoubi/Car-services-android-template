@@ -4,8 +4,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/wall"
-    tools:context=".Roles.Client.ClientHome">
+    tools:context=".Roles.Client.Home.ClientHome">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/welcomTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="10dp"
+            android:text="   veuillez sélectionner votre voiture "
+            android:textSize="25dp"
+            android:textColor="#FFFF"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
 
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/carList"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/welcomTv"
+            android:textSize="50dp"
+            android:gravity="left"
+            android:padding="5dip"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
 
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/carList"
+            android:layout_marginTop="100dp"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
 </FrameLayout>

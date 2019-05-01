@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall"
+    tools:context=".Roles.Client.Home.Facture.ClientFactureActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/Service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#f9ca12"
+            android:text="Service :  "
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+        <TextView
+            android:id="@+id/serviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Service"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FF0000"
+            android:text=""
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/piece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/Service"
+            android:textColor="#f9ca12"
+            android:text="Pieces :"
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/maind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/piece"
+            android:textColor="#f9ca12"
+            android:text="main-d'oeuvre :"
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/maind"
+            android:textColor="#f9ca12"
+            android:text="totale :"
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <Button
+            android:id="@+id/payLign"
+            android:text="Payer en ligne "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonshape"
+            android:layout_below="@+id/total"
+            android:layout_marginTop="50dp"
+            />
+        <Button
+            android:id="@+id/paynow"
+            android:text="Payer en espece "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonshape"
+            android:layout_below="@+id/payLign"
+            android:layout_marginTop="50dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
